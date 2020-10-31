@@ -20,7 +20,7 @@ export default class Cart {
   }
 
   /**
-   * Добавляет элемент в массив 
+   * Добавляет элемент в массив
    *
    * @param {Buyable} item - элемент реализующий интерфейс Buyable
    */
@@ -37,10 +37,10 @@ export default class Cart {
 
   /**
    * Уменьшает значение count переданного элемента
-   * 
+   *
    * @param {Buyable} item - элемент
    * @param {number} step - значение на которое нужно уменьшить значение count переданного элемента
-   * 
+   *
    */
   decrease(item: Buyable, step = 1): void {
     if (item.count > step) {
@@ -50,10 +50,10 @@ export default class Cart {
 
   /**
    * Увеличивает значение count переданного элемента
-   * 
+   *
    * @param {Buyable} item - элемент
    * @param {number} step - значение на которое нужно увеличить значение count переданного элемента
-   * 
+   *
    */
   increase(item: Buyable, step = 1): void {
     item.count += step;
