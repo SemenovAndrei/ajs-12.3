@@ -85,7 +85,7 @@ export default class Cart {
       throw new Error("discount incorrect");
     }
 
-    const result: number = this.getSum();
+    const result = this.getSum();
     return result - result * (discount / 100);
   }
 
